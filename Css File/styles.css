@@ -1,0 +1,951 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  color: white;
+  background: #e7d8cf;
+}
+
+/* Navbar */
+header {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  padding: 5px 0;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffcc99;
+  font-family: cormorant infant;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  white-space: nowrap;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+  font-family: cormorant infant;
+}
+
+nav ul li a:hover {
+  color: #ffcc99;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url("uk12.photo.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.styled-paragraph::first-letter {
+  font-size: 60px;
+  font-weight: bold;
+  float: left;
+  margin-right: 5px;
+  line-height: 1;
+  font-family: cormorant infant;
+}
+.styled-paragraph {
+  initial-letter: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-family: cormorant infant;
+}
+
+/* Info Section */
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 50px;
+  flex-wrap: wrap;
+  background: #e7d8cf;
+}
+
+.card {
+  width: 150px;
+  height: 50px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  border: 3px solid #6c794b;
+  backdrop-filter: blur(5px);
+  font-family: cormorant infant;
+}
+
+/* Content Grid Layout */
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns: text box & image box */
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+.styled-paragraph::first-letter {
+  font-size: 60px;
+  font-weight: bold;
+  float: left;
+  margin-right: 5px;
+  line-height: 1;
+  font-family: cormorant infant;
+}
+.styled-paragraph {
+  initial-letter: 2;
+}
+h4 {
+  font-size: 20px;
+  color: green;
+  text-align: center;
+  width: 130px;
+  height: 20px;
+  background-color: white;
+  border-radius: 8px;
+  margin: 0 auto 20px;
+  position: relative;
+  bottom: 20px;
+  padding: 10px 20px;
+  border: 2px solid #6c794b;
+}
+/* Text Box Styling */
+#text-box123 {
+  font-size: 1.1rem;
+  word-spacing: 5px;
+  line-height: 26px;
+  font-weight: bold;
+  color: black;
+  background-color: #e7d8cf;
+  height: 400px;
+  padding: 25px;
+  border-radius: 8px;
+  position: relative;
+  bottom: 40px;
+  text-align: justify;
+  width: 700px;
+  margin: 0 auto;
+  text-indent: 50px;
+  font-family: "Cormorant Infant", serif;
+}
+
+/* Image Box Styling */
+#image-box0 {
+  width: 400px;
+  height: 300px;
+  padding-left: 80px;
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  mix-blend-mode: multiply;
+}
+
+#image-box0 img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr; /* Stack elements in small screens */
+  }
+
+  #text-box1 {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  #image-box1 img {
+    max-width: 100%;
+  }
+}
+
+.attire-section h2 {
+  font-size: 20px;
+  color: green;
+  text-align: center;
+  width: 150px;
+  height: 20px;
+  border: 2px solid #6c794b;
+  background-color: white;
+  border-radius: 8px;
+  margin: 0 auto 20px;
+  padding: 10px 20px;
+}
+
+.attire-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  background-color: #e7d8cf;
+}
+
+.attire-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Background images for different boxes */
+#image-box1 {
+  background-image: url("tharu.photo (2).jpg");
+  width: 320px;
+  height: 250px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid white;
+}
+
+#image-box2 {
+  background-image: url("hindu.phot.jpg");
+  width: 320px;
+  height: 250px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid white;
+}
+#image-box3 {
+  background-image: url("buksa.photo.jpg");
+  width: 320px;
+  height: 250px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid white;
+}
+#image-box4 {
+  background-image: url("rongpa.photo.jpg");
+  width: 320px;
+  height: 250px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid white;
+}
+#image-box5 {
+  background-image: url("jauni.photo.jpg");
+  width: 320px;
+  height: 250px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid white;
+}
+#image-box6 {
+  background-image: url("bhotiaa.photo.jpg");
+  width: 320px;
+  height: 250px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid white;
+}
+
+#text-box11,
+#text-box12,
+#text-box13,
+#text-box14,
+#text-box15,
+#text-box16 {
+  width: 250px;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #6c794b;
+  color: black;
+}
+
+.full-screen-section {
+  text-align: center;
+}
+
+.section3 {
+  background-color: #e7d8cf;
+  color: Green;
+  height: 1000px;
+}
+
+.container {
+  width: 90%;
+  margin: 20px auto;
+  background-color: #e7d8cf;
+}
+
+h3 {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px 20px;
+  width: 150px;
+  height: 20px;
+  text-align: center;
+  font-size: 22px;
+  border: 2px solid #6c794b;
+  background-color: white;
+  color: Green;
+  border-radius: 8px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.image-box,
+.text-box {
+  width: 45%;
+  height: 200px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.image-box {
+  background-size: cover;
+  background-position: center;
+  height: 220px;
+  margin-left: 20px;
+  width: 330px;
+}
+
+.text-box {
+  background-color: #e7d8cf;
+  height: 200px;
+  margin-left: 20px;
+  width: 350px;
+  text-align: justify;
+  color: black;
+  font-family: cormorant infant;
+}
+
+/* Unique IDs for Image Backgrounds */
+#image1 {
+  background-image: url("lingde.photo.jpg");
+}
+#image2 {
+  background-image: url("ghuuu.photo.png");
+}
+#image3 {
+  background-image: url("thali.photo.jpg");
+}
+#image4 {
+  background-image: url("sweets.photo.jpg");
+}
+
+.new-container {
+  height: 100vh;
+  padding: 20px;
+  background-color: #e7d8cf;
+}
+h6 {
+  display: block;
+  margin: 0 auto 10px;
+  padding: 10px 20px;
+  width: 150px;
+  border: 2px solid #6c794b;
+  height: 20px;
+  text-align: center;
+  font-size: 21px;
+  background-color: white;
+  color: Green;
+  border-radius: 8px;
+}
+.scroll-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.new-box-container1 {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 80%;
+  padding: 10px;
+  gap: 15px;
+  height: 90vh;
+
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.new-box-container1::-webkit-scrollbar {
+  display: none;
+}
+
+/* Wrapper for Box and Text */
+.new-box-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+/* Styling for Each Box */
+.new-box {
+  background-color: #e7d8cf;
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  height: 190px;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: 2px 2px #4b5a24, -0.2em 0 0.2em #333;
+  transition: transform 0.3s ease;
+  background-size: cover;
+}
+
+.new-box:hover {
+  transform: scale(1.1);
+}
+
+/* Assigning Background Images */
+#new-box20 {
+  background-image: url("badri.photo.jpg");
+}
+#new-box21 {
+  background-image: url("kedarnath.photo.jpg");
+}
+#new-box22 {
+  background-image: url("mus.photo.jpg");
+}
+#new-box23 {
+  background-image: url("gangotri.photo.jpg");
+}
+#new-box24 {
+  background-image: url("haridwar.photo.jpg");
+}
+#new-box25 {
+  background-image: url("auli.photo.jpg");
+}
+#new-box26 {
+  background-image: url("gang.photo.jpg");
+}
+
+/* Scroll Buttons */
+.scroll-container button {
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.scroll-container button:hover {
+  background-color: orange;
+}
+
+/* Text Box Styling */
+#text-box21,
+#text-box22,
+#text-box23,
+#text-box24,
+#text-box25,
+#text-box26,
+#text-box27 {
+  width: 290px;
+  height: 20px;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #6c794b;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.updated-container {
+  height: 100vh;
+  padding: 20px;
+  position: relative;
+  bottom: 265px;
+  background-color: #e7d8cf;
+}
+
+.scroll-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.updated-box-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  width: 80%;
+  padding: 10px;
+  gap: 15px;
+  height: 90vh;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.updated-box-container::-webkit-scrollbar {
+  display: none;
+}
+
+.updated-box-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.updated-box {
+  background-color: yellow;
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  height: 190px;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: 2px 2px #4b5a24, -0.2em 0 0.2em #333;
+  transition: transform 0.3s ease;
+  background-size: cover;
+}
+
+.updated-box:hover {
+  transform: scale(1.1);
+}
+
+/* Unique Background Images */
+#updated-box1 {
+  background-image: url("ram.photo.jpg");
+}
+#updated-box2 {
+  background-image: url("tehri.photo.jpg");
+}
+#updated-box3 {
+  background-image: url("valley.photo.jpg");
+}
+#updated-box4 {
+  background-image: url("surkanda.photo.jpg");
+}
+#updated-box5 {
+  background-image: url("fri.photo.jpg");
+}
+#updated-box6 {
+  background-image: url("doon.photo.jpg");
+}
+#updated-box7 {
+  background-image: url("ka.photo.jpg");
+}
+
+.scroll-wrapper button {
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.scroll-wrapper button:hover {
+  background-color: orange;
+}
+
+#text-box111,
+#text-box222,
+#text-box333,
+#text-box444,
+#text-box555,
+#text-box666,
+#text-box777 {
+  width: 290px;
+  height: 20px;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  left: 1px;
+  border: 2px solid #6c794b;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+
+/* Main Container */
+.instrument-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  bottom: 550px;
+  background-color: #e7d8cf;
+}
+
+/* Left and Right Side */
+.left-side{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 48%;
+}
+
+/* Box Styling */
+.box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+.Bhank-goraa::first-letter {
+  font-size: 30px;
+  font-weight: bold;
+  float: left;
+  margin-right: 5px;
+  line-height: 1;
+  font-family: cormorant infant;
+}
+.Bhank-goraa {
+  initial-letter: 2;
+}
+
+
+.Dhol::first-letter {
+  font-size: 30px;
+  font-weight: bold;
+  float: left;
+  margin-right: 5px;
+  line-height: 1;
+  font-family: cormorant infant;
+}
+.Dhol{
+  initial-letter: 2;
+}
+
+
+.Hudka::first-letter {
+  font-size: 30px;
+  font-weight: bold;
+  float: left;
+  margin-right: 5px;
+  line-height: 1;
+  font-family: cormorant infant;
+}
+.Hudka{
+  initial-letter: 2;
+}
+
+.Turri::first-letter {
+  font-size: 30px;
+  font-weight: bold;
+  float: left;
+  margin-right: 5px;
+  line-height: 1;
+  font-family: cormorant infant;
+}
+.Turri{
+  initial-letter: 2;
+}
+
+.Masak::first-letter {
+  font-size: 30px;
+  font-weight: bold;
+  float: left;
+  margin-right: 5px;
+  line-height: 1;
+  font-family: cormorant infant;
+}
+.Masak{
+  initial-letter: 2;
+}
+/* Image Styling */
+.box div[id^="image-box"] {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  border: 2px solid black;
+}
+
+/* Left Side Image Boxes */
+#image-box51 {
+background-image: url("bhankhora.photo.png");
+width:150px;
+height:110px; 
+background-size: cover;
+}
+#image-box52 { background-image: url("dhol.photo.png");
+  width:150px;
+height:110px; 
+background-size: cover;
+ }
+#image-box53 { background-image: url("hudka.photo.png"); 
+  width:150px;
+  height:110px; 
+  background-size: cover;
+}
+#image-box54 { background-image: url("turri.photo.png");
+  width:150px;
+  height:110px; 
+  background-size: cover; 
+}
+#image-box55 { background-image: url("masak.photo.png"); 
+  width:150px;
+  height:110px; 
+  background-size: cover;}
+
+
+
+/* Text Box Styling */
+.box div[id^="text-box"] {
+  padding: 5px;
+  
+  text-align: center;
+  font-weight: bold;
+  width:450px;
+  
+}
+
+/* Specific Text Box Colors */
+#text-box50, #text-box56 {
+  width: 150px;
+  border: 2px solid #6c794b;
+  height: 25px;
+  font-size: 21px;
+  background-color: white;
+  color: green;
+  border-radius: 6px;
+  margin-top: 10px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+#text-box51 { background-color: #e7d8cf; 
+  text-align:justify;
+  color:black;
+  font-size: 15px;
+}
+#text-box52 { background-color: #e7d8cf;
+  text-align:justify;
+  color:black;
+  font-size: 15px;
+}
+#text-box53 { background-color: #e7d8cf;
+  text-align:justify;
+  color:black;
+  font-size: 15px; 
+}
+#text-box54 { background-color: #e7d8cf;
+  text-align:justify;
+  color:black;
+  font-size: 15px; 
+}
+#text-box55 { background-color: #e7d8cf; 
+  text-align:justify;
+  color:black;
+  font-size: 15px; }
+#text-box57, #text-box58, #text-box59, #text-box60, #text-box61 { background-color: green; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .instrument-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .left-side {
+      width: 100%;
+      align-items: center;
+  }
+
+  .box {
+      width: 90%;
+      flex-direction: column;
+  }
+}
+
+
+ .footer {
+    background-color: #facfa3;
+    color: black;
+    margin-top: 80px;
+    margin-left: 100px;
+    border-radius: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1250px;
+    flex-wrap: wrap;
+    padding-left: 100px;
+
+}
+
+.footer-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.no-card {
+    color: green;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 24px;
+    font-family: cormorant infant;
+}
+
+.email-box {
+    display: flex;
+    margin-top: 15px;
+    background: #333;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.email-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    padding: 8px;
+}
+
+.email-box button {
+    background: transparent;
+    border: none;
+    color: #ff007f;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.footer-logo h3 {
+    font-size: 24px;
+    color: #ff007f;
+}
+
+.footer-links ul,
+.footer-policies ul {
+    list-style: none;
+}
+
+.footer-links ul li,
+.footer-policies ul li {
+    margin: 10px 0;
+}
+
+.footer-links ul li a,
+.footer-policies ul li a,
+.footer-contact p a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover,
+.footer-policies ul li a:hover,
+.footer-contact p a:hover {
+    opacity: 1;
+    color: red;
+}
+
+.footer-contact {
+    text-align: left;
+}
+
+.footer-contact h3 {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
